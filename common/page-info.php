@@ -1,0 +1,51 @@
+<?php
+$page_id =1;
+$sql=" select * from page_info where id ='$page_id'";
+$result = $db->query($sql);
+$row = $result->fetch_assoc();
+$page_key_words = $row['key_words'];
+$page_description = $row['description'];
+$page_title = $row['title'];
+$phone_number = $row['phone'];
+$email_address = $row['email'];
+$facebook = $row['fb'];
+$twitter = $row['tw'];
+$instagram = $row['ins'];
+$whatsapp = $row['wl'];
+$youtube_chanel = $row['tel'];
+$page_name = $row['address'];
+$page_logo = $row['logo'];
+$map = $row['map'];
+$shop_address_1 = $row['h'];
+$page_p = $row['p'];
+$page_ln = $row['ln'];
+$view_tender_p = $row['v_p'];
+$view_tender_h = $row['v_h'];
+$page_chat_api = $row['chat'];
+$mail_host = $row['mh'];
+$in_coming_mail = $row['icm'];
+$mail_password = $row['mp'];
+$port = $row['port'];
+$app_logo = $row['app_logo'];
+$google_analytics = $row['android'];
+$facebook_pixel = $row['ios'];
+$welcome_msg = $row['welcome'];
+$naira = '&#8358;';
+$about_us = $row['p'];
+$bank_name = $row['bank_name'];
+$acc_name = $row['acc_name'];
+$acc_no = $row['acc_number'];
+
+$sql_p=" select * from payment where id ='$page_id'";
+$result_p = $db->query($sql_p);
+$row_p = $result_p->fetch_assoc();
+$secret_key = $row_p['secret_key'];
+$free_shipping = 150000;
+$return_days = 7;
+
+$sql1=  "select * from `voucher` WHERE id = '4'";
+$result2 = $db->query($sql1);
+$row2 = $result2->fetch_assoc();
+        $ccode=$row2['code'];
+        $ccodev=$row2['value'];
+        

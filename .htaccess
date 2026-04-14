@@ -1,0 +1,12 @@
+RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^employee employee_reg.php [NC,L]
+#RewriteRule ^workers employees_table.php [NC,L]
+RewriteRule ^(index|messages|brand|category|shop|policy|return-policy|return|contact|about|transfer-request|cart|checkout|instagram|terms|faq|register|login|forgot_pass|whishlist|product|error|delivery|verify|reset|reset_password|shipping|wholesale_details|pay|process|success|failed|invoice|logout|free-delivery|transfer)$ $1.php [NC,L]
+
+
+#RewriteRule ^portfolio  portfolio.php [NC,L]
+#Rewrite ^use/([0-9]+)user.php?id=$1
+
+#Rewrite ^use/([0-9]+)user.php?id=$1&uid=$2

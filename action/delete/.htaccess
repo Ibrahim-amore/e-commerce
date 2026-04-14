@@ -1,0 +1,9 @@
+RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^employee employee_reg.php [NC,L]
+#RewriteRule ^workers employees_table.php [NC,L]
+RewriteRule ^(dr|review|vd|dpr|dw|dd|dopt)$ $1.php [NC,L]
+
+
+#RewriteRule ^portfolio  portfolio.php [NC,L]
